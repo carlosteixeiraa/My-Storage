@@ -1,0 +1,26 @@
+{
+  "name": "my-storage",
+  "version": "1.0.0",
+  "description": "My Storage",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install",
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "My Storage"
+  ],
+  "author": "Carlos Teixeira",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.9.3",
+    "bower": "^1.3.12",
+    "express": "^4.10.4",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.0.6",
+    "multer": "^0.1.6"
+  }
+}

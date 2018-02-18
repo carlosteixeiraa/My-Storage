@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Upload | My Storage</title>
+    <meta charset="utf-8">
+    <link href="/dropzone/downloads/css/dropzone.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            font-weight: normal;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .dir a, a:visited {
+            text-decoration: none;
+            font-size: 18px;
+            color: inherit;
+        }
+
+        .dir a:nth-child(1) {
+            margin-right: 3%;
+        }
+
+        .dir a:hover {
+            font-weight: bold;
+            transition: font-weight 15ms;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        header {
+            padding-left: 2em;
+            padding-right: 2em;
+            min-height: 80px;
+            display: grid;
+            background: rgb(12, 143, 230);
+            color: white;
+            grid-template-columns: 1fr 1fr;
+            height: 15vh;
+        }
+
+        .esq {
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
+
+        .dir {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: flex-end;
+        }
+
+        form {
+            display: flex;
+            height: 85vh;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="esq">
+            <a href="/">
+                <h1>My Storage</h1>    
+            </a>
+        </div>
+        <div class="dir">
+            <!-- <a href="/ficheiros">Ficheiros</a> -->
+            <a href="/sair">Sair</a>
+        </div>
+    </header>
+    <form method="post" action="/" class="dropzone" id="dropzone-example">
+        <div class="fallback">
+            <input name="file" type="file" multiple />
+        </div>
+        <h1>Arraste os ficheiros para fazer upload</h1>
+    </form>
+
+
+    <script src="/dropzone/downloads/dropzone.js"></script>
+</body>
+</html>

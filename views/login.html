@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Login | My Storage</title>
+    <meta charset="utf-8">
+    <link href="/dropzone/downloads/css/dropzone.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            font-weight: normal;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            height: 100vh;
+            width: 100vw;
+            background: rgb(12, 143, 230);
+        }
+
+        header {
+            height: 45vh;
+            display: flex;
+            font-size: 32px;
+            color: white;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        #wrapper {
+            height: 20vh;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        form input {
+            font-family: 'Roboto', sans-serif;
+            padding-left: 0.5em;
+            color: rgb(43, 43, 43);
+            border-radius: 3px;
+            height: 40px;
+            border: none;
+        }
+
+        form input:focus {
+            border-bottom: 4px solid rgb(11, 64, 100);
+        }
+        
+        form button {
+            font-family: 'Roboto', sans-serif;
+            border: none;
+            height: 40px;
+            width: 80px;
+            color: white;
+            background: rgb(11, 64, 100);
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Storage</h1>
+    </header>
+    <div id="wrapper">
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <script src="/dropzone/downloads/dropzone.js"></script>
+</body>
+</html>
